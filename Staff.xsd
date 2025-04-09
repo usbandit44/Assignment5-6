@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="https://usbandit44.github.io/Assignment5-6/"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+  <element name="Staff">
+    <complexType>
+      <sequence>
+        <element name="StaffMember" maxOccurs="unbounded">
+          <complexType>
+            <sequence>
+              <element name="Username" type="string" minOccurs="1" maxOccurs="1" />
+              <element name="Password" type="string" minOccurs="1" maxOccurs="1" />
+              <element name="Position" type="string" minOccurs="1" maxOccurs="1" />
+            </sequence>
+          </complexType>
+        </element>
+      </sequence>
+    </complexType>
+  </element>
+</schema>
