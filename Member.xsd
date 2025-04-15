@@ -11,14 +11,7 @@
             <sequence>
               <element name="Email" type="string" minOccurs="1" maxOccurs="1" />
               <element name="Password" type="string" minOccurs="1" maxOccurs="1" />
-              <element name="Records" maxOccurs="unbounded">
-                <complexType>
-                  <sequence>
-                    <element name="Date"></element>
-                    <element name="VisitNotes"></element>
-                  </sequence>
-                </complexType>
-              </element>
+              <element name="Records" type="string" maxOccurs="1" />
             </sequence>
           </complexType>
         </element>
